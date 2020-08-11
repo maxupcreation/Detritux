@@ -15,12 +15,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1NJ-Kz-j5H">
-                                <rect key="frame" x="0.0" y="371" width="320" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-13-fFT">
+                                <rect key="frame" x="40" y="149" width="240" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X93-gY-ihD">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="41"/>
+                                        <color key="backgroundColor" red="0.74901960779999999" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-Ls-lXO">
+                                        <rect key="frame" x="0.0" y="53" width="240" height="41"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-G2-vf2">
+                                <rect key="frame" x="20" y="20" width="280" height="109"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detritux" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-qr-4PJ">
+                                        <rect key="frame" x="49" y="0.0" width="182" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7Mo-qr-4PJ" secondAttribute="height" multiplier="197:67" id="S7r-Fo-Bei"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="52"/>
+                                        <color key="textColor" red="0.74901960779999999" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rend ta ville plus propre En rejoignant la communauté !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-am-WEN">
+                                        <rect key="frame" x="9.5" y="61" width="261.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7Mo-qr-4PJ" firstAttribute="top" secondItem="RU2-G2-vf2" secondAttribute="top" id="ZsG-Di-efi"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sans titre-1" translatesAutoresizingMaskIntoConstraints="NO" id="1NJ-Kz-j5H">
+                                <rect key="frame" x="0.0" y="318" width="320" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="pQJ-mW-npa"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1NJ-Kz-j5H" secondAttribute="trailing" id="I3K-qV-Frx"/>
+                            <constraint firstItem="1NJ-Kz-j5H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RjJ-8b-a9k"/>
+                            <constraint firstItem="a5D-13-fFT" firstAttribute="top" secondItem="RU2-G2-vf2" secondAttribute="bottom" constant="20" id="SxJ-IH-RtD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a5D-13-fFT" secondAttribute="trailing" constant="40" id="czb-Lh-SZc"/>
+                            <constraint firstItem="RU2-G2-vf2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gTP-IU-i4N"/>
+                            <constraint firstItem="a5D-13-fFT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jNE-wI-2pi"/>
+                            <constraint firstItem="RU2-G2-vf2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jsT-od-oVh"/>
+                            <constraint firstItem="1NJ-Kz-j5H" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rwg-GX-eHY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RU2-G2-vf2" secondAttribute="trailing" constant="20" id="xkp-Vi-Pu8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -29,4 +86,7 @@
             <point key="canvasLocation" x="131.25" y="91.901408450704224"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sans titre-1" width="650" height="410"/>
+    </resources>
 </document>
