@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C5FF54F24E3E00F000A5A05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FF54E24E3E00E000A5A05 /* Model.swift */; };
+		9C5FF55424E3E29B000A5A05 /* Inscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FF55324E3E29A000A5A05 /* Inscription.swift */; };
 		9C6DD96724E1680F003CED25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96624E1680F003CED25 /* AppDelegate.swift */; };
 		9C6DD96924E1680F003CED25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96824E1680F003CED25 /* SceneDelegate.swift */; };
 		9C6DD96B24E1680F003CED25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96A24E1680F003CED25 /* ViewController.swift */; };
@@ -15,7 +17,6 @@
 		9C6DD97324E16817003CED25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DD97224E16817003CED25 /* Assets.xcassets */; };
 		9C6DD97624E16817003CED25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DD97424E16817003CED25 /* LaunchScreen.storyboard */; };
 		9C6DD98124E16818003CED25 /* DetrituxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD98024E16818003CED25 /* DetrituxTests.swift */; };
-		9C6DD98C24E16818003CED25 /* DetrituxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD98B24E16818003CED25 /* DetrituxUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C5FF54E24E3E00E000A5A05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9C5FF55324E3E29A000A5A05 /* Inscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inscription.swift; sourceTree = "<group>"; };
 		9C6DD96324E1680F003CED25 /* Detritux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Detritux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6DD96624E1680F003CED25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6DD96824E1680F003CED25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,8 +52,6 @@
 		9C6DD98024E16818003CED25 /* DetrituxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetrituxTests.swift; sourceTree = "<group>"; };
 		9C6DD98224E16818003CED25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6DD98724E16818003CED25 /* DetrituxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetrituxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C6DD98B24E16818003CED25 /* DetrituxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetrituxUITests.swift; sourceTree = "<group>"; };
-		9C6DD98D24E16818003CED25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +79,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C5FF55024E3E01F000A5A05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C6DD96624E1680F003CED25 /* AppDelegate.swift */,
+				9C5FF54E24E3E00E000A5A05 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C5FF55124E3E035000A5A05 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				9C5FF55324E3E29A000A5A05 /* Inscription.swift */,
+				9C6DD96824E1680F003CED25 /* SceneDelegate.swift */,
+				9C6DD96A24E1680F003CED25 /* ViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		9C5FF55224E3E05D000A5A05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C6DD96C24E1680F003CED25 /* Main.storyboard */,
+				9C6DD97224E16817003CED25 /* Assets.xcassets */,
+				9C6DD97424E16817003CED25 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9C6DD95A24E1680F003CED25 = {
 			isa = PBXGroup;
 			children = (
 				9C6DD96524E1680F003CED25 /* Detritux */,
 				9C6DD97F24E16818003CED25 /* DetrituxTests */,
-				9C6DD98A24E16818003CED25 /* DetrituxUITests */,
 				9C6DD96424E1680F003CED25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,12 +130,9 @@
 		9C6DD96524E1680F003CED25 /* Detritux */ = {
 			isa = PBXGroup;
 			children = (
-				9C6DD96624E1680F003CED25 /* AppDelegate.swift */,
-				9C6DD96824E1680F003CED25 /* SceneDelegate.swift */,
-				9C6DD96A24E1680F003CED25 /* ViewController.swift */,
-				9C6DD96C24E1680F003CED25 /* Main.storyboard */,
-				9C6DD97224E16817003CED25 /* Assets.xcassets */,
-				9C6DD97424E16817003CED25 /* LaunchScreen.storyboard */,
+				9C5FF55024E3E01F000A5A05 /* Model */,
+				9C5FF55124E3E035000A5A05 /* Controler */,
+				9C5FF55224E3E05D000A5A05 /* View */,
 				9C6DD97724E16817003CED25 /* Info.plist */,
 				9C6DD96F24E1680F003CED25 /* Detritux.xcdatamodeld */,
 			);
@@ -120,15 +146,6 @@
 				9C6DD98224E16818003CED25 /* Info.plist */,
 			);
 			path = DetrituxTests;
-			sourceTree = "<group>";
-		};
-		9C6DD98A24E16818003CED25 /* DetrituxUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9C6DD98B24E16818003CED25 /* DetrituxUITests.swift */,
-				9C6DD98D24E16818003CED25 /* Info.plist */,
-			);
-			path = DetrituxUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5FF55424E3E29B000A5A05 /* Inscription.swift in Sources */,
+				9C5FF54F24E3E00F000A5A05 /* Model.swift in Sources */,
 				9C6DD96B24E1680F003CED25 /* ViewController.swift in Sources */,
 				9C6DD96724E1680F003CED25 /* AppDelegate.swift in Sources */,
 				9C6DD97124E1680F003CED25 /* Detritux.xcdatamodeld in Sources */,
@@ -281,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C6DD98C24E16818003CED25 /* DetrituxUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
