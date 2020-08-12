@@ -24,6 +24,16 @@ class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
         return true
     }
     
+    @IBAction func Validate(_ sender: Any) {
+        func saveDataVIP() {
+            
+        }
+       }
+    private func saveDataVIP() {
+    let emailAdresse = emailTxtField.text
+    let mDP = mdpTxtField.text
+    let dataVip = DataVIP (EmailAdress: emailAdresse, MotDePasse: mDP)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

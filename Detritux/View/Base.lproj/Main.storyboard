@@ -169,6 +169,10 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="Gx6-V8-ahv"/>
+                                    <action selector="Validate:" destination="63D-L0-oMW" eventType="touchUpInside" id="bWJ-AP-gpp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,6 +201,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLE-Io-xYm" sceneMemberID="firstResponder"/>
+                <exit id="pEH-c7-P4q" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="aCl-KV-cc4">
                     <connections>
                         <action selector="tapGestureAction:" destination="63D-L0-oMW" id="357-E0-IxD"/>

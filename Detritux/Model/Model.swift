@@ -7,3 +7,8 @@
 //
 
 import UIKit
+struct DataVIP {
+    var EmailAdress : String?
+    var MotDePasse : String?
+    
+}
