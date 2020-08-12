@@ -61,8 +61,8 @@
                                         <color key="textColor" red="0.74901960779999999" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rend ta ville plus propre en rejoignant la communauté !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-am-WEN">
-                                        <rect key="frame" x="10" y="61" width="260.5" height="48"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rend ta ville plus propre et rejoint la communauté !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-am-WEN">
+                                        <rect key="frame" x="28.5" y="61" width="223.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -172,6 +172,7 @@
                                 <connections>
                                     <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="Gx6-V8-ahv"/>
                                     <action selector="Validate:" destination="63D-L0-oMW" eventType="touchUpInside" id="bWJ-AP-gpp"/>
+                                    <segue destination="kxt-ZY-Vx4" kind="presentation" id="gl2-nM-28y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -208,7 +209,194 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="902" y="90"/>
+            <point key="canvasLocation" x="945" y="90"/>
+        </scene>
+        <!--BienvenuPrenom-->
+        <scene sceneID="d2m-gi-nkO">
+            <objects>
+                <viewController id="kxt-ZY-Vx4" userLabel="BienvenuPrenom" customClass="BienvenuPrenom" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uLu-Jk-w0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CLA-7r-Om1">
+                                <rect key="frame" x="20" y="20" width="280" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenu !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uln-q3-ccx">
+                                        <rect key="frame" x="33" y="0.0" width="214" height="73"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uln-q3-ccx" secondAttribute="height" multiplier="197:67" id="Yxu-X2-LuW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="52"/>
+                                        <color key="textColor" red="0.74901960779999999" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uln-q3-ccx" firstAttribute="top" secondItem="CLA-7r-Om1" secondAttribute="top" id="iWD-bb-NK3"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPh-dn-Hdg">
+                                <rect key="frame" x="40" y="477" width="240" height="41"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="anN-X9-20Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Valider">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Validate:" destination="Kfs-tt-mju" eventType="touchUpInside" id="OOi-UX-JJf"/>
+                                    <action selector="Validate:" destination="kxt-ZY-Vx4" eventType="touchUpInside" id="QlL-rK-2TZ"/>
+                                    <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="eN3-LZ-p4F"/>
+                                    <action selector="savePrenom:" destination="kxt-ZY-Vx4" eventType="touchUpInside" id="Bgq-Uz-7dX"/>
+                                    <segue destination="SV0-fb-T3A" kind="presentation" id="4de-2N-K9Q"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Il est temps de rendre ta ville plus propre ! " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="leU-9g-wa3">
+                                <rect key="frame" x="40" y="91" width="240" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mais avant, quel est ton prénom ?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CDo-UD-br3">
+                                <rect key="frame" x="40" y="277" width="240" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELY-0N-uJ4">
+                                <rect key="frame" x="69" y="173" width="183" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="JWk-H6-jtn" userLabel="PrenomStack">
+                                <rect key="frame" x="40" y="377" width="240" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prénom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stG-Pd-gAN">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UPh-dn-Hdg" firstAttribute="leading" secondItem="wDM-x8-RlF" secondAttribute="leading" constant="40" id="0ZT-SV-1gF"/>
+                            <constraint firstItem="wDM-x8-RlF" firstAttribute="bottom" secondItem="UPh-dn-Hdg" secondAttribute="bottom" constant="30" id="6gR-3f-GQD"/>
+                            <constraint firstItem="wDM-x8-RlF" firstAttribute="trailing" secondItem="UPh-dn-Hdg" secondAttribute="trailing" constant="40" id="MAd-OX-1QH"/>
+                            <constraint firstItem="wDM-x8-RlF" firstAttribute="trailing" secondItem="CLA-7r-Om1" secondAttribute="trailing" constant="20" id="PNI-P7-QN0"/>
+                            <constraint firstItem="JWk-H6-jtn" firstAttribute="leading" secondItem="wDM-x8-RlF" secondAttribute="leading" constant="40" id="W8H-ml-MfT"/>
+                            <constraint firstItem="CLA-7r-Om1" firstAttribute="top" secondItem="wDM-x8-RlF" secondAttribute="top" constant="20" id="XbT-9I-jHE"/>
+                            <constraint firstItem="UPh-dn-Hdg" firstAttribute="top" secondItem="JWk-H6-jtn" secondAttribute="bottom" constant="66" id="cUB-j7-ohk"/>
+                            <constraint firstItem="wDM-x8-RlF" firstAttribute="trailing" secondItem="JWk-H6-jtn" secondAttribute="trailing" constant="40" id="dzk-GX-CPd"/>
+                            <constraint firstItem="CLA-7r-Om1" firstAttribute="leading" secondItem="wDM-x8-RlF" secondAttribute="leading" constant="20" id="o08-1w-Sq7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wDM-x8-RlF"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vvf-qN-a4N" appends="YES" id="qEG-RK-V3k"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cc3-XX-5HQ"/>
+                    <connections>
+                        <outlet property="Prenom" destination="stG-Pd-gAN" id="D5A-4y-pIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5up-0a-3Qx" sceneMemberID="firstResponder"/>
+                <exit id="Kfs-tt-mju" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="vvf-qN-a4N">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="kxt-ZY-Vx4" id="BnB-NQ-C8j"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="219" y="892"/>
+        </scene>
+        <!--MerciPhotoDeProfil-->
+        <scene sceneID="xTU-x6-cOi">
+            <objects>
+                <viewController id="SV0-fb-T3A" userLabel="MerciPhotoDeProfil" customClass="MerciPhotoDeProfil" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gmG-ox-RBZ" customClass="Merci">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="w0F-DB-ROx">
+                                <rect key="frame" x="20" y="20" width="280" height="114"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Merci" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3H8-B4-0xo">
+                                        <rect key="frame" x="20" y="0.0" width="240" height="56.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzp-52-A2n">
+                                        <rect key="frame" x="129" y="57.5" width="22.5" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="52"/>
+                                        <color key="textColor" red="0.74901960779999999" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrE-MO-2eu">
+                                <rect key="frame" x="40" y="477" width="240" height="41"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Mid-Bp-AWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Valider">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Validate:" destination="2B4-0N-8Ls" eventType="touchUpInside" id="0ZT-cx-OaC"/>
+                                    <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="6nO-b9-bA8"/>
+                                    <action selector="Validate:" destination="SV0-fb-T3A" eventType="touchUpInside" id="HHj-gW-1GN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="w0F-DB-ROx" firstAttribute="top" secondItem="HBP-mr-gGx" secondAttribute="top" constant="20" id="Ecu-ir-Bh7"/>
+                            <constraint firstItem="HBP-mr-gGx" firstAttribute="bottom" secondItem="ZrE-MO-2eu" secondAttribute="bottom" constant="30" id="K7H-IU-Uav"/>
+                            <constraint firstItem="HBP-mr-gGx" firstAttribute="trailing" secondItem="w0F-DB-ROx" secondAttribute="trailing" constant="20" id="RP3-oD-6Zw"/>
+                            <constraint firstItem="HBP-mr-gGx" firstAttribute="trailing" secondItem="ZrE-MO-2eu" secondAttribute="trailing" constant="40" id="UYx-s1-Naz"/>
+                            <constraint firstItem="w0F-DB-ROx" firstAttribute="leading" secondItem="HBP-mr-gGx" secondAttribute="leading" constant="20" id="kt5-yW-Jhl"/>
+                            <constraint firstItem="ZrE-MO-2eu" firstAttribute="leading" secondItem="HBP-mr-gGx" secondAttribute="leading" constant="40" id="sbq-t5-GED"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HBP-mr-gGx"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="P8B-Es-mGR" appends="YES" id="dwL-sS-7G0"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qfi-Az-mFi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFN-4L-WHF" sceneMemberID="firstResponder"/>
+                <exit id="2B4-0N-8Ls" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="P8B-Es-mGR">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="SV0-fb-T3A" id="Kkh-Jf-7Aw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="907.5" y="891.54929577464793"/>
         </scene>
     </scenes>
     <resources>

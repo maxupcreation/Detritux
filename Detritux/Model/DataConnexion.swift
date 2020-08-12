@@ -7,7 +7,7 @@
 //
 
 import UIKit
-struct DataVIP {
+struct DataConnexion {
     var EmailAdress : String?
     var MotDePasse : String?
     

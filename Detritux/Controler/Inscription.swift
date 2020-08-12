@@ -14,13 +14,13 @@ class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
     
     @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
         emailTxtField.resignFirstResponder()
-          mdpTxtField.resignFirstResponder()
+        mdpTxtField.resignFirstResponder()
         
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         emailTxtField.resignFirstResponder()
-         mdpTxtField.resignFirstResponder()
+        mdpTxtField.resignFirstResponder()
         return true
     }
     
@@ -28,18 +28,18 @@ class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
         func saveDataVIP() {
             
         }
-       }
-    private func saveDataVIP() {
-    let emailAdresse = emailTxtField.text
-    let mDP = mdpTxtField.text
-    let dataVip = DataVIP (EmailAdress: emailAdresse, MotDePasse: mDP)
     }
-
+    private func saveDataVIP() {
+        let emailAdresse = emailTxtField.text
+        let mDP = mdpTxtField.text
+        let dataCo = DataConnexion (EmailAdress: emailAdresse, MotDePasse: mDP)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
 }
