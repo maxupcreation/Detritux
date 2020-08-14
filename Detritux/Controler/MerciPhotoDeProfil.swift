@@ -9,6 +9,16 @@
 import UIKit
 
 class MerciPhotoDeProfil: UIViewController {
+    weak var prenomString: UILabel!
+    var saveP = DataConnexion()
+    var bienvenuPrenom = BienvenuPrenom()
+    
+    func affichagePrenom() {
+        prenomString.text = saveP.prenom
+    }
+   
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

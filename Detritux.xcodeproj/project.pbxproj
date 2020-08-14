@@ -95,8 +95,8 @@
 		9C5FF55124E3E035000A5A05 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
-				9C5FF55824E436FA000A5A05 /* MerciPhotoDeProfil.swift */,
 				9C5FF55624E43332000A5A05 /* BienvenuPrenom.swift */,
+				9C5FF55824E436FA000A5A05 /* MerciPhotoDeProfil.swift */,
 				9C5FF55324E3E29A000A5A05 /* Inscription.swift */,
 				9C6DD96824E1680F003CED25 /* SceneDelegate.swift */,
 				9C6DD96A24E1680F003CED25 /* ViewController.swift */,

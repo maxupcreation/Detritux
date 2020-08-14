@@ -10,5 +10,6 @@ import UIKit
 struct DataConnexion {
     var EmailAdress : String?
     var MotDePasse : String?
+    var prenom = "x"
     
 }

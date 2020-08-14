@@ -256,7 +256,7 @@
                                     <action selector="Validate:" destination="kxt-ZY-Vx4" eventType="touchUpInside" id="QlL-rK-2TZ"/>
                                     <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="eN3-LZ-p4F"/>
                                     <action selector="savePrenom:" destination="kxt-ZY-Vx4" eventType="touchUpInside" id="Bgq-Uz-7dX"/>
-                                    <segue destination="SV0-fb-T3A" kind="presentation" id="4de-2N-K9Q"/>
+                                    <segue destination="SV0-fb-T3A" kind="presentation" identifier="segueToPrenom" id="lfy-5e-PVa"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Il est temps de rendre ta ville plus propre ! " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="leU-9g-wa3">
@@ -310,14 +310,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="Cc3-XX-5HQ"/>
                     <connections>
-                        <outlet property="Prenom" destination="stG-Pd-gAN" id="D5A-4y-pIf"/>
+                        <outlet property="prenom" destination="stG-Pd-gAN" id="xqE-86-KtN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5up-0a-3Qx" sceneMemberID="firstResponder"/>
                 <exit id="Kfs-tt-mju" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="vvf-qN-a4N">
                     <connections>
-                        <action selector="tapGestureAction:" destination="kxt-ZY-Vx4" id="BnB-NQ-C8j"/>
+                        <action selector="tapGesturePrenom:" destination="kxt-ZY-Vx4" id="79B-kY-ONa"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -367,7 +367,6 @@
                                 <connections>
                                     <action selector="Validate:" destination="2B4-0N-8Ls" eventType="touchUpInside" id="0ZT-cx-OaC"/>
                                     <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="6nO-b9-bA8"/>
-                                    <action selector="Validate:" destination="SV0-fb-T3A" eventType="touchUpInside" id="HHj-gW-1GN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -387,14 +386,13 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Qfi-Az-mFi"/>
+                    <connections>
+                        <outlet property="prenomString" destination="Bzp-52-A2n" id="gBR-Bb-OXE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFN-4L-WHF" sceneMemberID="firstResponder"/>
                 <exit id="2B4-0N-8Ls" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="P8B-Es-mGR">
-                    <connections>
-                        <action selector="tapGestureAction:" destination="SV0-fb-T3A" id="Kkh-Jf-7Aw"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="P8B-Es-mGR"/>
             </objects>
             <point key="canvasLocation" x="907.5" y="891.54929577464793"/>
         </scene>

@@ -11,6 +11,7 @@ import UIKit
 class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var mdpTxtField: UITextField!
+    var dataCo = DataConnexion()
     
     @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
         emailTxtField.resignFirstResponder()
@@ -32,7 +33,7 @@ class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
     private func saveDataVIP() {
         let emailAdresse = emailTxtField.text
         let mDP = mdpTxtField.text
-        let dataCo = DataConnexion (EmailAdress: emailAdresse, MotDePasse: mDP)
+        _ = DataConnexion (EmailAdress: emailAdresse, MotDePasse: mDP)
     }
     
     override func viewDidLoad() {
