@@ -109,10 +109,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="fEW-kS-og3">
                                 <rect key="frame" x="40" y="149.5" width="240" height="91"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-4o-0g6">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kl" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-4o-0g6">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="NMg-pF-1um"/>
+                                            <constraint firstAttribute="width" secondItem="2Og-4o-0g6" secondAttribute="height" multiplier="120:17" id="7Qf-0M-dWk"/>
                                             <constraint firstAttribute="height" constant="34" id="lK0-2D-Mge"/>
                                         </constraints>
                                         <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -122,10 +122,10 @@
                                             <outlet property="delegate" destination="63D-L0-oMW" id="3SJ-qS-nfu"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-S2-lL9">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lkml" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-S2-lL9">
                                         <rect key="frame" x="0.0" y="57" width="240" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="WLa-Ki-DdY"/>
+                                            <constraint firstAttribute="width" secondItem="tYy-S2-lL9" secondAttribute="height" multiplier="120:17" id="Mxu-O3-g7a"/>
                                             <constraint firstAttribute="height" constant="34" id="cqM-KX-xld"/>
                                         </constraints>
                                         <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -170,7 +170,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="Gx6-V8-ahv"/>
                                     <action selector="Validate:" destination="63D-L0-oMW" eventType="touchUpInside" id="bWJ-AP-gpp"/>
                                     <segue destination="kxt-ZY-Vx4" kind="presentation" id="gl2-nM-28y"/>
                                 </connections>
@@ -211,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="945" y="90"/>
         </scene>
-        <!--BienvenuPrenom-->
+        <!--BienvenuPhotoDeProfil-->
         <scene sceneID="d2m-gi-nkO">
             <objects>
-                <viewController id="kxt-ZY-Vx4" userLabel="BienvenuPrenom" customClass="BienvenuPrenom" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kxt-ZY-Vx4" userLabel="BienvenuPhotoDeProfil" customClass="BienvenuPhotoDeProfil" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLu-Jk-w0a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,13 +252,12 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="Validate:" destination="Kfs-tt-mju" eventType="touchUpInside" id="OOi-UX-JJf"/>
-                                    <action selector="Validate:" destination="kxt-ZY-Vx4" eventType="touchUpInside" id="QlL-rK-2TZ"/>
                                     <action selector="Validate:" destination="pEH-c7-P4q" eventType="touchUpInside" id="eN3-LZ-p4F"/>
-                                    <action selector="savePrenom:" destination="kxt-ZY-Vx4" eventType="touchUpInside" id="Bgq-Uz-7dX"/>
+                                    <action selector="savePrenom" destination="kxt-ZY-Vx4" eventType="touchUpInside" id="sj6-Dy-Jpg"/>
                                     <segue destination="SV0-fb-T3A" kind="presentation" identifier="segueToPrenom" id="lfy-5e-PVa"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Il est temps de rendre ta ville plus propre ! " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="leU-9g-wa3">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Il est temps de rendre ta ville plus propre ! " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leU-9g-wa3">
                                 <rect key="frame" x="40" y="91" width="240" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -267,7 +265,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mais avant, quel est ton prénom ?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CDo-UD-br3">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Mais avant, quel est ton prénom ?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDo-UD-br3">
                                 <rect key="frame" x="40" y="277" width="240" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -310,7 +308,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Cc3-XX-5HQ"/>
                     <connections>
-                        <outlet property="prenom" destination="stG-Pd-gAN" id="xqE-86-KtN"/>
+                        <outlet property="prenomString" destination="stG-Pd-gAN" id="aJi-VI-1Lz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5up-0a-3Qx" sceneMemberID="firstResponder"/>
@@ -323,10 +321,10 @@
             </objects>
             <point key="canvasLocation" x="219" y="892"/>
         </scene>
-        <!--MerciPhotoDeProfil-->
+        <!--MerciPrenom-->
         <scene sceneID="xTU-x6-cOi">
             <objects>
-                <viewController id="SV0-fb-T3A" userLabel="MerciPhotoDeProfil" customClass="MerciPhotoDeProfil" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SV0-fb-T3A" userLabel="MerciPrenom" customClass="MerciPrenom" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gmG-ox-RBZ" customClass="Merci">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

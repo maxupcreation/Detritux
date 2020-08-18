@@ -8,9 +8,10 @@
 
 import UIKit
 
-class BienvenuPrenom: UIViewController {
-    @IBOutlet weak var prenom: UITextField!
-    var saveP = DataConnexion()
+class BienvenuPhotoDeProfil: UIViewController {
+    @IBOutlet weak var prenomString: UITextField!
+    
+    var saveP : DataConnexion!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,26 +19,29 @@ class BienvenuPrenom: UIViewController {
         
     }
     @IBAction func tapGesturePrenom(_ sender: UITapGestureRecognizer) {
-        prenom.resignFirstResponder()
+        prenomString.resignFirstResponder()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        prenom.resignFirstResponder()
+        prenomString.resignFirstResponder()
         return true
     }
     
     @IBAction func savePrenom() {
-        func  savePrenom(){}
+        saveprenomAction()
+        performSegue(withIdentifier: "segueToPrenom", sender: self)
+        
     }
-    private func saveprenom() {
-        let savePrenom = prenom.text
-        saveP = DataConnexion(prenom: savePrenom!)
+    private func saveprenomAction() {
+        let savePrenomString = prenomString.text
+        saveP = DataConnexion(prenom: savePrenomString)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToPrenom" {
-            let prenomSegue = segue.destination as! MerciPhotoDeProfil
-            prenomSegue.prenomString.text = prenom.text
+            let prenomSegue = segue.destination as! MerciPrenom
+            prenomSegue.saveP = saveP
         }
     }
 }
