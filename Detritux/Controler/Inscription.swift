@@ -12,6 +12,8 @@ class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var mdpTxtField: UITextField!
     
+    //SignUpViewController
+    var names = [String]()
     
     @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
         emailTxtField.resignFirstResponder()
@@ -25,7 +27,7 @@ class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
         return true
     }
     
-    @IBAction func Validate(_ sender: Any) {
+    @IBAction func validateButtonTapped(_ sender: Any) {
      
     }
   /* private func saveDataVIP() {

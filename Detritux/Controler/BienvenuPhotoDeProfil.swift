@@ -28,11 +28,11 @@ class BienvenuPhotoDeProfil: UIViewController {
     }
     
     @IBAction func savePrenom() {
-        saveprenomAction()
+        saveFirstName()
         performSegue(withIdentifier: "segueToPrenom", sender: self)
         
     }
-    private func saveprenomAction() {
+    private func saveFirstName() {
         let savePrenomString = prenomString.text
         saveP = DataConnexion(prenom: savePrenomString)
         
