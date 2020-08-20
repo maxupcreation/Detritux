@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Inscription: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
+class SignInViewController: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var mdpTxtField: UITextField!
     

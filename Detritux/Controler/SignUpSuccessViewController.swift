@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MerciPrenom: UIViewController {
+class SignUpSuccessViewController: UIViewController {
     
-    @IBOutlet weak var prenomString: MerciPrenom!
+    @IBOutlet weak var prenomString: SignUpSuccess!
     var saveP = DataConnexion()
     
 
