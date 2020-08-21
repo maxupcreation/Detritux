@@ -7,7 +7,7 @@
 //
 
 import UIKit
-struct DataConnexion {
+struct DataConnexionModel {
     var EmailAdress : String?
     var MotDePasse : String?
     var prenom : String?

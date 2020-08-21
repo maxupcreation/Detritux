@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,9 +27,6 @@
                                         <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="63D-L0-oMW" id="LzI-ga-PiZ"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mot de passe" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-dG-ePN">
                                         <rect key="frame" x="0.0" y="46" width="240" height="34"/>
@@ -40,9 +37,6 @@
                                         <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="63D-L0-oMW" id="Jj4-de-O3g"/>
-                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD9-aW-EEu">
                                         <rect key="frame" x="0.0" y="92" width="240" height="34"/>
@@ -59,9 +53,6 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="validate:" destination="63D-L0-oMW" eventType="touchUpInside" id="qNz-hb-mu7"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESD-iq-rcG">
                                         <rect key="frame" x="0.0" y="138" width="240" height="34"/>
@@ -250,10 +241,6 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="FwE-8I-Ujz"/>
-                    <connections>
-                        <outlet property="emailTxtField" destination="2Og-4o-0g6" id="H9N-5w-iUR"/>
-                        <outlet property="mdpTxtField" destination="tYy-S2-lL9" id="xvZ-eb-wnh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLE-Io-xYm" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="aCl-KV-cc4">
@@ -262,14 +249,12 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="945" y="90"/>
+            <point key="canvasLocation" x="945" y="89.788732394366193"/>
         </scene>
         <!--SignUpSuccessViewController-->
         <scene sceneID="xTU-x6-cOi">
             <objects>
-                <tapGestureRecognizer id="P8B-Es-mGR"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aFN-4L-WHF" sceneMemberID="firstResponder"/>
-                <viewController id="SV0-fb-T3A" userLabel="SignUpSuccessViewController" customClass="MerciPrenom" sceneMemberID="viewController">
+                <viewController id="SV0-fb-T3A" userLabel="SignUpSuccessViewController" customClass="SignUpSuccessViewController" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gmG-ox-RBZ" customClass="Merci">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,6 +302,8 @@
                         <outlet property="prenomString" destination="Bzp-52-A2n" id="gBR-Bb-OXE"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="P8B-Es-mGR"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFN-4L-WHF" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="907.5" y="891.54929577464793"/>
         </scene>

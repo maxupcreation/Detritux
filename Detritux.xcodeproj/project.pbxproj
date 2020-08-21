@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C5FF54F24E3E00F000A5A05 /* DataConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FF54E24E3E00E000A5A05 /* DataConnexion.swift */; };
+		9C5FF54F24E3E00F000A5A05 /* DataConnexionModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FF54E24E3E00E000A5A05 /* DataConnexionModel .swift */; };
 		9C5FF55424E3E29B000A5A05 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FF55324E3E29A000A5A05 /* SignInViewController.swift */; };
-		9C5FF55724E43332000A5A05 /* BienvenuPhotoDeProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FF55624E43332000A5A05 /* BienvenuPhotoDeProfil.swift */; };
 		9C5FF55924E436FA000A5A05 /* SignUpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FF55824E436FA000A5A05 /* SignUpSuccessViewController.swift */; };
 		9C6DD96724E1680F003CED25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96624E1680F003CED25 /* AppDelegate.swift */; };
 		9C6DD96924E1680F003CED25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96824E1680F003CED25 /* SceneDelegate.swift */; };
-		9C6DD96B24E1680F003CED25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96A24E1680F003CED25 /* ViewController.swift */; };
+		9C6DD96B24E1680F003CED25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96A24E1680F003CED25 /* HomeViewController.swift */; };
 		9C6DD96E24E1680F003CED25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DD96C24E1680F003CED25 /* Main.storyboard */; };
 		9C6DD97124E1680F003CED25 /* Detritux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD96F24E1680F003CED25 /* Detritux.xcdatamodeld */; };
 		9C6DD97324E16817003CED25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DD97224E16817003CED25 /* Assets.xcassets */; };
@@ -39,14 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C5FF54E24E3E00E000A5A05 /* DataConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnexion.swift; sourceTree = "<group>"; };
+		9C5FF54E24E3E00E000A5A05 /* DataConnexionModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataConnexionModel .swift"; sourceTree = "<group>"; };
 		9C5FF55324E3E29A000A5A05 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		9C5FF55624E43332000A5A05 /* BienvenuPhotoDeProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BienvenuPhotoDeProfil.swift; sourceTree = "<group>"; };
 		9C5FF55824E436FA000A5A05 /* SignUpSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewController.swift; sourceTree = "<group>"; };
 		9C6DD96324E1680F003CED25 /* Detritux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Detritux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6DD96624E1680F003CED25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6DD96824E1680F003CED25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C6DD96A24E1680F003CED25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C6DD96A24E1680F003CED25 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9C6DD96D24E1680F003CED25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C6DD97024E1680F003CED25 /* Detritux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Detritux.xcdatamodel; sourceTree = "<group>"; };
 		9C6DD97224E16817003CED25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				9C6DD96624E1680F003CED25 /* AppDelegate.swift */,
-				9C5FF54E24E3E00E000A5A05 /* DataConnexion.swift */,
+				9C5FF54E24E3E00E000A5A05 /* DataConnexionModel .swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,11 +93,10 @@
 		9C5FF55124E3E035000A5A05 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
-				9C5FF55624E43332000A5A05 /* BienvenuPhotoDeProfil.swift */,
 				9C5FF55824E436FA000A5A05 /* SignUpSuccessViewController.swift */,
 				9C5FF55324E3E29A000A5A05 /* SignInViewController.swift */,
+				9C6DD96A24E1680F003CED25 /* HomeViewController.swift */,
 				9C6DD96824E1680F003CED25 /* SceneDelegate.swift */,
-				9C6DD96A24E1680F003CED25 /* ViewController.swift */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
@@ -286,12 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5FF55424E3E29B000A5A05 /* SignInViewController.swift in Sources */,
-				9C5FF54F24E3E00F000A5A05 /* DataConnexion.swift in Sources */,
+				9C5FF54F24E3E00F000A5A05 /* DataConnexionModel .swift in Sources */,
 				9C5FF55924E436FA000A5A05 /* SignUpSuccessViewController.swift in Sources */,
-				9C6DD96B24E1680F003CED25 /* ViewController.swift in Sources */,
+				9C6DD96B24E1680F003CED25 /* HomeViewController.swift in Sources */,
 				9C6DD96724E1680F003CED25 /* AppDelegate.swift in Sources */,
 				9C6DD97124E1680F003CED25 /* Detritux.xcdatamodeld in Sources */,
-				9C5FF55724E43332000A5A05 /* BienvenuPhotoDeProfil.swift in Sources */,
 				9C6DD96924E1680F003CED25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

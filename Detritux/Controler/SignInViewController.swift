@@ -9,32 +9,32 @@
 import UIKit
 
 class SignInViewController: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
-    @IBOutlet weak var emailTxtField: UITextField!
-    @IBOutlet weak var mdpTxtField: UITextField!
     
-    //SignUpViewController
+    @IBOutlet var dataSignInTxtField: [UITextField]!
+  
+    
+
+    //SignUpViewControllerz
     var names = [String]()
     
     @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
-        emailTxtField.resignFirstResponder()
-        mdpTxtField.resignFirstResponder()
-        
+        for txtField in dataSignInTxtField {
+        txtField.resignFirstResponder()
+      }
+    
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        emailTxtField.resignFirstResponder()
-        mdpTxtField.resignFirstResponder()
+        for txtField in dataSignInTxtField {
+               txtField.resignFirstResponder()
+             }
         return true
     }
     
     @IBAction func validateButtonTapped(_ sender: Any) {
      
     }
-  /* private func saveDataVIP() {
-        let emailAdresse = emailTxtField.text
-        let mDP = mdpTxtField.text
-        let dataCo = DataConnexion (EmailAdress: emailAdresse, MotDePasse: mDP)
-    }*/
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,8 +10,8 @@ import UIKit
 
 class SignUpSuccessViewController: UIViewController {
     
-    @IBOutlet weak var prenomString: SignUpSuccess!
-    var saveP = DataConnexion()
+    @IBOutlet weak var prenomString: SignUpSuccessViewController!
+    
     
 
     
