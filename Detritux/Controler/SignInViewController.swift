@@ -8,33 +8,37 @@
 
 import UIKit
 
-class SignInViewController: UIViewController,UIPickerViewDelegate, UITextFieldDelegate {
+class SignInViewController: UIViewController, UIPickerViewDelegate, UITextFieldDelegate {
+
     
     @IBOutlet var dataSignInTxtField: [UITextField]!
+    
   
     
+    
+    
+    
+    
+    
+    @IBAction func tapGestureReturn(_ sender: UITapGestureRecognizer) {
+        for dataSign in dataSignInTxtField {
+            dataSign.resignFirstResponder()
+        }
+            
+        }
+        
+        
+        
+        
 
-    //SignUpViewControllerz
-    var names = [String]()
-    
-    @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
-        for txtField in dataSignInTxtField {
-        txtField.resignFirstResponder()
-      }
-    
-    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        for txtField in dataSignInTxtField {
-               txtField.resignFirstResponder()
-             }
+        textField.resignFirstResponder()
         return true
     }
     
-    @IBAction func validateButtonTapped(_ sender: Any) {
-     
-    }
- 
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,5 +46,5 @@ class SignInViewController: UIViewController,UIPickerViewDelegate, UITextFieldDe
         // Do any additional setup after loading the view.
     }
     
-    
 }
+

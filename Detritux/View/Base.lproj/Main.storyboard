@@ -121,7 +121,7 @@
         <!--SignInViewController-->
         <scene sceneID="K8w-5G-mi2">
             <objects>
-                <viewController id="63D-L0-oMW" userLabel="SignInViewController" customClass="Inscription" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="63D-L0-oMW" userLabel="SignInViewController" customClass="SignInViewController" customModule="Detritux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MVi-z7-zS9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +129,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="fEW-kS-og3" userLabel="infoTexfieldStack">
                                 <rect key="frame" x="40" y="122" width="240" height="205"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prénom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-4o-0g6" userLabel="prenomTxtField">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prénom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-4o-0g6" userLabel="prenomTxtField">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2Og-4o-0g6" secondAttribute="height" multiplier="120:17" id="7Qf-0M-dWk"/>
@@ -139,10 +139,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="63D-L0-oMW" id="3SJ-qS-nfu"/>
+                                            <outlet property="delegate" destination="63D-L0-oMW" id="dbS-bo-N8s"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="E-mail" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjy-GO-39z">
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="E-mail" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjy-GO-39z">
                                         <rect key="frame" x="0.0" y="57" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="jEv-Sn-C0X"/>
@@ -155,7 +155,7 @@
                                             <outlet property="delegate" destination="63D-L0-oMW" id="AgU-wa-idY"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mot de passe" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-S2-lL9">
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mot de passe" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-S2-lL9">
                                         <rect key="frame" x="0.0" y="114" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tYy-S2-lL9" secondAttribute="height" multiplier="120:17" id="Mxu-O3-g7a"/>
@@ -168,7 +168,7 @@
                                             <outlet property="delegate" destination="63D-L0-oMW" id="apV-is-hj6"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmation du mot de passe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-AI-Qg3">
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmation du mot de passe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-AI-Qg3">
                                         <rect key="frame" x="0.0" y="171" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="6Il-AI-Qg3" secondAttribute="height" multiplier="120:17" id="ZuK-FG-6Vj"/>
@@ -186,6 +186,9 @@
                                     <constraint firstItem="Zjy-GO-39z" firstAttribute="width" secondItem="Zjy-GO-39z" secondAttribute="height" multiplier="120:17" id="iuR-bS-5n7"/>
                                     <constraint firstItem="6Il-AI-Qg3" firstAttribute="width" secondItem="6Il-AI-Qg3" secondAttribute="height" multiplier="120:17" id="mTJ-4P-nYc"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aCl-KV-cc4" appends="YES" id="zuO-vD-IAY"/>
+                                </connections>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vZt-oL-HYU">
                                 <rect key="frame" x="20" y="20" width="280" height="79.5"/>
@@ -217,7 +220,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="validate:" destination="63D-L0-oMW" eventType="touchUpInside" id="bWJ-AP-gpp"/>
                                     <segue destination="SV0-fb-T3A" kind="presentation" id="2sA-4w-RRR"/>
                                 </connections>
                             </button>
@@ -243,11 +245,7 @@
                     <navigationItem key="navigationItem" id="FwE-8I-Ujz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLE-Io-xYm" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="aCl-KV-cc4">
-                    <connections>
-                        <action selector="tapGestureAction:" destination="63D-L0-oMW" id="357-E0-IxD"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aCl-KV-cc4"/>
             </objects>
             <point key="canvasLocation" x="945" y="89.788732394366193"/>
         </scene>
