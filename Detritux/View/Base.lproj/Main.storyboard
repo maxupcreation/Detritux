@@ -129,7 +129,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="fEW-kS-og3" userLabel="infoTexfieldStack">
                                 <rect key="frame" x="40" y="122" width="240" height="205"/>
                                 <subviews>
-                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prénom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-4o-0g6" userLabel="prenomTxtField">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prénom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-4o-0g6" userLabel="prenomTxtField">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2Og-4o-0g6" secondAttribute="height" multiplier="120:17" id="7Qf-0M-dWk"/>
@@ -139,10 +139,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="63D-L0-oMW" id="dbS-bo-N8s"/>
+                                            <outlet property="delegate" destination="63D-L0-oMW" id="7D5-9I-7ZH"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="E-mail" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjy-GO-39z">
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjy-GO-39z">
                                         <rect key="frame" x="0.0" y="57" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="jEv-Sn-C0X"/>
@@ -152,10 +152,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="63D-L0-oMW" id="AgU-wa-idY"/>
+                                            <outlet property="delegate" destination="63D-L0-oMW" id="Z4v-cv-jWK"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mot de passe" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-S2-lL9">
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-S2-lL9">
                                         <rect key="frame" x="0.0" y="114" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tYy-S2-lL9" secondAttribute="height" multiplier="120:17" id="Mxu-O3-g7a"/>
@@ -165,10 +165,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="63D-L0-oMW" id="apV-is-hj6"/>
+                                            <outlet property="delegate" destination="63D-L0-oMW" id="n7c-Jn-iYB"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmation du mot de passe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-AI-Qg3">
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmation du mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-AI-Qg3">
                                         <rect key="frame" x="0.0" y="171" width="240" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="6Il-AI-Qg3" secondAttribute="height" multiplier="120:17" id="ZuK-FG-6Vj"/>
@@ -178,7 +178,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="63D-L0-oMW" id="V8y-GZ-0kS"/>
+                                            <outlet property="delegate" destination="63D-L0-oMW" id="HOy-1I-fdJ"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -220,7 +220,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="SV0-fb-T3A" kind="presentation" id="2sA-4w-RRR"/>
+                                    <action selector="validateButton:" destination="63D-L0-oMW" eventType="touchUpInside" id="hQ6-MY-x3d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -243,6 +243,13 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="FwE-8I-Ujz"/>
+                    <connections>
+                        <outletCollection property="dataSignInTxtField" destination="2Og-4o-0g6" collectionClass="NSMutableArray" id="LGg-Eu-M4c"/>
+                        <outletCollection property="dataSignInTxtField" destination="Zjy-GO-39z" collectionClass="NSMutableArray" id="voc-Gm-45t"/>
+                        <outletCollection property="dataSignInTxtField" destination="tYy-S2-lL9" collectionClass="NSMutableArray" id="jjH-45-I0C"/>
+                        <outletCollection property="dataSignInTxtField" destination="6Il-AI-Qg3" collectionClass="NSMutableArray" id="NTT-cH-f64"/>
+                        <segue destination="SV0-fb-T3A" kind="presentation" identifier="segueSignUpSuccess" id="T7n-kY-u5C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLE-Io-xYm" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="aCl-KV-cc4"/>
@@ -291,13 +298,10 @@
                             <constraint firstItem="w0F-DB-ROx" firstAttribute="leading" secondItem="HBP-mr-gGx" secondAttribute="leading" constant="20" id="kt5-yW-Jhl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HBP-mr-gGx"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="P8B-Es-mGR" appends="YES" id="dwL-sS-7G0"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Qfi-Az-mFi"/>
                     <connections>
-                        <outlet property="prenomString" destination="Bzp-52-A2n" id="gBR-Bb-OXE"/>
+                        <outlet property="prenomString" destination="Bzp-52-A2n" id="I7K-Pi-uIT"/>
                     </connections>
                 </viewController>
                 <tapGestureRecognizer id="P8B-Es-mGR"/>

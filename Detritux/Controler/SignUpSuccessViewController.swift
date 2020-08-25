@@ -9,11 +9,17 @@
 import UIKit
 
 class SignUpSuccessViewController: UIViewController {
+    var dataCo = DataConnexionModel()
     
-    @IBOutlet weak var prenomString: SignUpSuccessViewController!
+  
+    @IBOutlet weak var prenomString: UILabel! {
+        didSet {
+            prenomString.text = dataCo.prenom
+        }
+    }
     
     
-
+    
     
     
     
