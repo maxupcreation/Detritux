@@ -9,7 +9,7 @@
 import UIKit
 struct DataConnexionModel {
     var eMail : String?
-    var MotDePasse : String?
+    var motDePasse : String?
     var confirmMotDePasse : String?
     var prenom : String?
     

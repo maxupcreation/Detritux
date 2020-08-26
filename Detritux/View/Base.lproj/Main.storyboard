@@ -186,9 +186,6 @@
                                     <constraint firstItem="Zjy-GO-39z" firstAttribute="width" secondItem="Zjy-GO-39z" secondAttribute="height" multiplier="120:17" id="iuR-bS-5n7"/>
                                     <constraint firstItem="6Il-AI-Qg3" firstAttribute="width" secondItem="6Il-AI-Qg3" secondAttribute="height" multiplier="120:17" id="mTJ-4P-nYc"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="aCl-KV-cc4" appends="YES" id="zuO-vD-IAY"/>
-                                </connections>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vZt-oL-HYU">
                                 <rect key="frame" x="20" y="20" width="280" height="79.5"/>
@@ -252,7 +249,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLE-Io-xYm" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="aCl-KV-cc4"/>
+                <tapGestureRecognizer id="aCl-KV-cc4">
+                    <connections>
+                        <action selector="tapGestureReturn:" destination="63D-L0-oMW" id="3Hv-OM-3Jz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="945" y="89.788732394366193"/>
         </scene>

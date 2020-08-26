@@ -16,7 +16,7 @@ class SignInViewController: UIViewController, UIPickerViewDelegate, UITextFieldD
     
     @IBAction func validateButton(_ sender: Any) {
         dataConnexionObject()
-        performSegue(withIdentifier:"segueSignUpSuccess", sender: self)
+        performSegue(withIdentifier:"segueSignUpSuccess", sender: nil)
     }
     
     private func dataConnexionObject() {
@@ -24,7 +24,7 @@ class SignInViewController: UIViewController, UIPickerViewDelegate, UITextFieldD
         let eMail = dataSignInTxtField[1].text
         let motDePasse = dataSignInTxtField[2].text
         let confirmMotDePasse = dataSignInTxtField[3].text
-        dataCo = DataConnexionModel(eMail: eMail, MotDePasse: motDePasse, confirmMotDePasse: confirmMotDePasse, prenom: prenom)
+        dataCo = DataConnexionModel(eMail: eMail, motDePasse: motDePasse, confirmMotDePasse: confirmMotDePasse, prenom: prenom)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
