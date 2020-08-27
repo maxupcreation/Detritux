@@ -17,6 +17,7 @@ class SignInViewController: UIViewController, UIPickerViewDelegate, UITextFieldD
     @IBAction func validateButton(_ sender: Any) {
         dataConnexionObject()
         performSegue(withIdentifier:"segueSignUpSuccess", sender: nil)
+    
     }
     
     private func dataConnexionObject() {
