@@ -27,24 +27,18 @@ struct DataConnexionModel {
 
         var status: Status {
             if prenom == nil || prenom == "" {
-                return .rejected("Vous n'avez pas indiquÃ© votre nom !")
+                return .rejected("Vous n'avez pas indiqué votre prénom !")
             }
             if motDePasse == nil || motDePasse == "" {
-                return .rejected("Vous n'avez pas indiquÃ© votre tÃ©lÃ©phone !")
+                return .rejected("Vous n'avez pas indiqué votre mot de passe !")
             }
             if confirmMotDePasse == nil || confirmMotDePasse == "" {
-                return .rejected("Quel est votre race ?")
+                return .rejected("Vous devez confirmer votre mot de passe !")
             }
             if eMail == nil || eMail == "" {
-                return .rejected("Les mineurs ne sont pas admis.")
+                return .rejected("Vous n'avez pas indiqué votre email !")
             }
             return .accepted
-        }
-     
-      
-            
-        
-            
         }
         
 

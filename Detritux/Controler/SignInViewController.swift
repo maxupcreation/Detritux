@@ -16,8 +16,22 @@ class SignInViewController: UIViewController, UIPickerViewDelegate, UITextFieldD
     
     @IBAction func validateButton(_ sender: Any) {
         dataConnexionObject()
-        performSegue(withIdentifier:"segueSignUpSuccess", sender: nil)
+        checkStatusTxtField()
+    }
     
+   private func checkStatusTxtField() {
+    switch dataCo.status {
+    case.accepted :
+        performSegue(withIdentifier:"segueSignUpSuccess", sender: nil)
+    case.rejected(let error): presentAlert(with: error)
+    }
+    }
+    
+    private func presentAlert(with error: String) {
+        let alert = UIAlertController(title: "Erreur", message: error, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     private func dataConnexionObject() {
